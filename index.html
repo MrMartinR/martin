@@ -1,1 +1,217 @@
-<h1>hi there</h1>
+<!DOCTYPE html>
+
+<html lang="en">
+  <!-- Defines the natural language of the page. -->
+
+  <!-- 
+    HEAD 
+   ----------------------- -->
+  <head>
+    <!-- Declares the document’s character encoding. -->
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Martin Romero</title>
+
+    <meta
+      name="description"
+      content="Martin Romero site where you can find details about his services related to IT and other computer stuff"
+    />
+    <!-- Description of the page, unique, displayed on search result pages. ~155–160 characters. -->
+    <meta name="author" content="Martin Romero" />
+
+    <!-- OpenGraph -->
+    <!-- Used by URL scrapers on social media platforms like Twitter or Facebook. -->
+    <meta property="og:title" content="Martin Romero • A computer guy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://martinr.net/" />
+    <!-- The canonical URL of the page. -->
+    <meta property="og:locale" content="en_US" />
+    <!-- Defines the natural language of the page. -->
+    <meta
+      property="og:description"
+      content="Martin Romero site where you can find details about his services related to IT and other computer stuff"
+    />
+    <meta property="og:image" content="image.png" />
+    <!-- The image displayed on link sharing on social media, chat, etc 1200 x 630.  -->
+
+    <!-- Icons -->
+    <!-- <link rel="icon" href="/favicon.ico" sizes="any"> 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <!-- 180x180 -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- CSS color to customize the display of the page or of the surrounding user interface. -->
+    <meta name="theme-color" content="#314149" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#85AD8D" media="(prefers-color-scheme: light)" />
+
+    <!-- Stylesheet for the HTML. -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400&display=swap" rel="stylesheet" />
+  </head>
+
+  <!-- 
+    BODY 
+   ----------------------- -->
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Icon -->
+      <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-miterlimit="2">
+        <path
+          d="M16.68 22.362a2.015 2.015 0 00-3.864-.18l-2.587 7.53a2 2 0 01-2.885 1.085L.58 26.923a1.124 1.124 0 01-.555-.93v-.008c-.056-5.53 0-11.062 0-16.593v-.004c.003-.38.211-.741.54-.94l.006-.003c4.827-2.806 9.7-5.532 14.55-8.297l.004-.002c.174-.097.371-.147.57-.146h.008c.181.004.36.052.519.137l.006.004c4.874 2.725 9.701 5.53 14.552 8.296l.003.002a1.124 1.124 0 01.555.94l.013 2.367c.002.196.45 14.036.6 18.646a1.43 1.43 0 01-1.429 1.475h-.002a1.362 1.362 0 01-1.36-1.289l-.423-7.853a1.952 1.952 0 00-3.677-.804l-4.593 8.733h-.654a1.432 1.432 0 01-1.392-1.095l-1.741-7.197zm11.582-12.011a.357.357 0 00-.028-.378 4.28 4.28 0 00-1.341-1.192l-9.02-5.143a4.435 4.435 0 00-4.384 0L4.46 8.786a4.31 4.31 0 00-2.19 3.74V22.85c0 1.534.83 2.951 2.177 3.719l1.397.796a1.974 1.974 0 002.846-1.08l5.374-15.838c.187-.55.702-.919 1.283-.919.657 0 1.228.449 1.384 1.087l2.354 9.648a2 2 0 003.712.458l5.464-10.37z"
+          fill="var(--color-sec)"
+        />
+      </svg>
+
+      <section>
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/mr-martin-romero/">
+          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-miterlimit="2">
+            <path
+              d="M32 2.353v27.294A2.365 2.365 0 0129.647 32H2.353A2.365 2.365 0 010 29.647V2.353A2.365 2.365 0 012.353 0h27.294A2.365 2.365 0 0132 2.353zM9.412 12.235H4.706v15.06h4.706v-15.06zm.423-5.176V7.04c0-1.48-1.212-2.7-2.691-2.71h-.085a2.742 2.742 0 00-2.73 2.729 2.742 2.742 0 002.73 2.73h.067a2.723 2.723 0 002.71-2.645v-.085zm17.46 11.087c0-4.527-2.88-6.287-5.742-6.287a5.37 5.37 0 00-4.762 2.428h-.132v-2.052h-4.424v15.06h4.706v-8.01a3.14 3.14 0 012.824-3.37h.179c1.496 0 2.607.941 2.607 3.313v8.066h4.705l.038-9.148z"
+              fill="var(--color-sec)"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+
+        <!-- Email Link -->
+        <button class="emailIcon" onclick="sendEmail()">
+          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-miterlimit="2">
+            <path
+              d="M32 8c0-4.415-3.585-8-8-8H8C3.585 0 0 3.585 0 8v16c0 4.415 3.585 8 8 8h16c4.415 0 8-3.585 8-8V8zM15.865 29.365c-1.798 0-3.483-.296-5.056-.887a12.866 12.866 0 01-4.146-2.505 11.603 11.603 0 01-2.796-3.836c-.673-1.478-1.01-3.104-1.01-4.878s.337-3.441 1.01-5.002a12.989 12.989 0 012.796-4.114 13.1 13.1 0 014.146-2.776c1.573-.668 3.258-1.002 5.056-1.002 1.81 0 3.5.337 5.073 1.01a13.098 13.098 0 014.137 2.784 12.983 12.983 0 012.78 4.107c.668 1.555 1.002 3.219 1.002 4.993 0 .898-.113 1.796-.34 2.694a9.427 9.427 0 01-.984 2.455c-.43.74-.957 1.331-1.581 1.774-.623.444-1.337.666-2.143.666-.64 0-1.266-.145-1.878-.436a4.318 4.318 0 01-1.531-1.19 3.067 3.067 0 01-.695-1.692 5.006 5.006 0 01-1.788 1.651c-.74.41-1.594.615-2.565.615-1.202 0-2.303-.292-3.301-.878a6.65 6.65 0 01-2.384-2.366c-.59-.991-.885-2.088-.885-3.293s.295-2.3.885-3.285a6.665 6.665 0 012.384-2.357c.998-.586 2.099-.879 3.3-.879.95 0 1.816.2 2.6.6.783.399 1.395.933 1.837 1.601v-1.872l1.87.279v9.362c0 .526.209.964.629 1.314.419.351.888.526 1.406.526.662 0 1.203-.276 1.622-.829.42-.553.729-1.238.927-2.054.199-.815.298-1.618.298-2.406a10.23 10.23 0 00-.836-4.123 10.69 10.69 0 00-2.308-3.375 10.839 10.839 0 00-3.402-2.275 10.413 10.413 0 00-4.13-.822c-1.466 0-2.845.274-4.136.822a10.817 10.817 0 00-3.41 2.275 10.69 10.69 0 00-2.308 3.375 10.23 10.23 0 00-.836 4.123c0 1.467.276 2.801.827 4a9.214 9.214 0 002.3 3.096 10.595 10.595 0 003.41 2.004c1.29.471 2.676.706 4.154.706v2.3zM15.5 21.94c.872 0 1.622-.235 2.25-.706a4.654 4.654 0 001.457-1.831 5.587 5.587 0 00.513-2.341c0-.778-.157-1.506-.471-2.185a3.961 3.961 0 00-1.415-1.651c-.63-.421-1.407-.632-2.334-.632-.871 0-1.663.208-2.375.624a4.766 4.766 0 00-1.704 1.684 4.483 4.483 0 00-.638 2.357c0 .876.216 1.667.646 2.374a4.81 4.81 0 001.72 1.683 4.602 4.602 0 002.35.624z"
+              fill="var(--color-sec)"
+            />
+          </svg>
+        </button>
+        <!-- GitHub -->
+        <a href="https://github.com/MrMartinR/">
+          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-miterlimit="2">
+            <path
+              d="M16 0C7.16 0 0 7.341 0 16.405c0 7.259 4.58 13.39 10.94 15.564.8.143 1.1-.35 1.1-.78 0-.39-.02-1.681-.02-3.055-4.02.759-5.06-1.005-5.38-1.928-.18-.471-.96-1.927-1.64-2.317-.56-.307-1.36-1.066-.02-1.087 1.26-.02 2.16 1.19 2.46 1.682 1.44 2.481 3.74 1.784 4.66 1.353.14-1.066.56-1.784 1.02-2.194-3.56-.41-7.28-1.825-7.28-8.1 0-1.784.62-3.26 1.64-4.408-.16-.41-.72-2.092.16-4.348 0 0 1.34-.43 4.4 1.682 1.28-.37 2.64-.554 4-.554 1.36 0 2.72.185 4 .554 3.06-2.133 4.4-1.682 4.4-1.682.88 2.256.32 3.938.16 4.348 1.02 1.148 1.64 2.604 1.64 4.408 0 6.296-3.74 7.69-7.3 8.1.58.513 1.08 1.497 1.08 3.035 0 2.194-.02 3.958-.02 4.511 0 .43.3.944 1.1.78 6.496-2.249 10.898-8.534 10.9-15.564C32 7.34 24.84 0 16 0z"
+              fill="var(--color-sec)"
+            />
+          </svg>
+        </a>
+      </section>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section-hero">
+        <figure>
+          <img src="./martin-romero.jpeg" alt="Martin Romero" class="picture" />
+        </figure>
+        <h1>Hi there! I'm Martin</h1>
+        <p class="tagline">A computer guy</p>
+      </section>
+
+      <!-- About -->
+      <section class="section-odd section-body">
+        <h2>Who am I?</h2>
+        <p>
+          Spanish guy on papers but (semi) Digital Nomad, hitting my forties, with no official degrees, but a
+          <a href="https://en.wikipedia.org/wiki/Lifelong_learning" target="_blank">lifelong learning</a>, I’ve been
+          'playing' with computers for more than 25 years, touching basically every category except AI (too much).
+        </p>
+        <p>I’m looking to establish long term relationships with SMEs providing a wide variety of services.</p>
+      </section>
+
+      <!-- Promise -->
+      <section class="section-even section-body">
+        <h2>How can I help your business?</h2>
+        <p>
+          Where I really shine is in transforming the workflow of your small business into a more productive
+          environment, adopting paperless philosophy, avoiding duplicating data, integrating services, web development,
+          doing some graphic design, tweaking your social media, etc…
+        </p>
+        <p>Small or big task, you can count on me!</p>
+        <p>I'm also open to work for agencies if they need to outsource some tasks.</p>
+        <p class="ngo">
+          If you are a NGO, non-profit organization, charity or a social enterprise, I can offer you my services free of
+          charge*. <small><a href="#section-tc">T&C apply.</a>/</small>
+        </p>
+      </section>
+
+      <!-- Rates -->
+      <section class="section-odd section-body">
+        <h2>Rates</h2>
+        <p>My actual 'symbolic' rate is: 10 $/€/£ per hour.</p>
+        <p>For simple tasks I can work on fixed price model.</p>
+        <p>For complex projects I will charge you a few coins a month using subscription model.</p>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section-even section-body">
+        <h2>Customer Feedback</h2>
+        <figure class="testimonials">
+          <img src="./testimonial.jpg" alt="Edgar Walter, Founder of Bana Inc" class="testimonial-picture" />
+          <figcaption>Edgar Walter, <cite>Founder of Bana Inc</cite></figcaption>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+            I strongly recommend Martin to everyone interested in running a successful business!
+          </blockquote>
+        </figure>
+      </section>
+
+      <!-- Contact -->
+      <section class="section-contact">
+        <h2>Contact me Today!</h2>
+        <p>Send me a message with your idea or next task.</p>
+        <br />
+        <!-- Form -->
+        <form name="contactForm">
+          <label for="name">Name</label>
+          <input name="name" type="text" required placeholder="Enter your name" />
+          <label for="email">Email</label>
+          <input name="email" type="email" required placeholder="Enter your email" />
+          <textarea name="message" placeholder="White your comment"></textarea>
+          <button>Send Message</button>
+        </form>
+      </section>
+
+      <!-- T&Cs -->
+      <section id="section-tc">
+        <p><small>Terms & Conditions</small></p>
+        <p><small>Communication: The main form of communication will be by email and/or chat.</small></p>
+        <p><small>Ethical Code: I do not work for business related to Politics, Religion or Arms Industry.</small></p>
+        <p>
+          <small>
+            Availability: Due the lack of availability, I’ve decided to stop working with startups, accepting only
+            business with 3 or more years of trading, also to give priority to customers from the following countries:
+            United Kingdom, Switzerland, Canada, New Zealand, Australia, Germany, Austria, Netherlands, Belgium,
+            Estonia, Finland, Denmark, Sweden, France, United States and Japan
+          </small>
+        </p>
+        <p>
+          <small>
+            If your company doesn’t meet the requirements above, maybe I can make an exception, feel free to contact me
+            to discuss it further.
+          </small>
+        </p>
+        <p>
+          <small>
+            * “Fair policy“ applies, software, 3rd party services, hosting, domain, or other cost related to the job,
+            apart for my time, are not included. You agree to allow me to include your project to my portfolio and
+            provide feedback (good or bad) about my performance.
+          </small>
+        </p>
+      </section>
+    </main>
+
+    <!-- 
+    Footer 
+   ----------------------- -->
+    <footer class="footer">
+      <p>Copyright © 2021 Martin Romero</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
