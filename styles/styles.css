@@ -1,8 +1,30 @@
 :root {
-  --color-main-dark: hsl(200 20% 24%);
+  /* --color-main-dark: hsl(200 20% 24%);
   --color-main-light: hsl(200 20% 90%);
   --color-main-mid: hsl(200 20% 45%);
-  --color-sec: hsl(132 20% 60%);
+  --color-sec: hsl(132 20% 60%); */
+  --color-main-dark: hsl(200 20% 20%);
+  --color-main-light: hsl(200 20% 96%);
+  --color-main-mid: hsl(200 20% 45%);
+  --color-sec: hsl(132 20% 50%);
+}
+
+html {
+  font-family: Urbanist;
+  font-size: 16px;
+  background-color: var(--color-main-dark);
+  color: var(--color-main-light);
+  /* Include padding and border in the element's total width and height */
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Allows the embedded components to behave like a content box way */
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
 }
 
 a:any-link {
@@ -14,11 +36,8 @@ body {
   margin: 0;
 }
 
-html {
-  font-family: Urbanist;
-  font-size: 16px;
-  background-color: var(--color-main-dark);
-  color: var(--color-main-light);
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -27,12 +46,21 @@ h2 {
   margin: 0;
 }
 
+h1 {
+  font-size: clamp(1.8rem, 1rem + 2vw, 2.8rem);
+}
+
 h2 {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.6rem);
   padding: 0.4rem 1rem;
   margin-bottom: 0.5rem;
   border: none;
   border-radius: 0 4px 4px 0;
+}
+
+p {
+  margin: 0.8rem 1rem;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.2rem);
 }
 
 small {
@@ -50,10 +78,6 @@ header section svg {
 
 figure {
   margin: 0;
-}
-
-p {
-  margin: 0.8rem 1rem;
 }
 
 input,
@@ -75,10 +99,27 @@ button {
 }
 
 /* 
+  Skip to main content
+  ----------------------- */
+#skip-to-content {
+  background: var(--color-main-light);
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  border-radius: 0 0 4px 4px;
+}
+#skip-to-content:focus {
+  transform: translateY(0%);
+}
+
+/* 
   Hero Section
   ----------------------- */
 .section-hero {
-  display: grid;
+  background-color: var(--color-main-dark);
   text-align: center;
   padding: 1.5rem;
 }
@@ -95,6 +136,7 @@ button {
 .tagline {
   margin: 0;
   padding-top: 0.4rem;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.6rem);
   color: var(--color-sec);
 }
 
@@ -102,7 +144,6 @@ button {
   Sections
   ----------------------- */
 .section-body {
-  /* display: grid; */
   padding: 1.5rem 0 1.5rem 0;
 }
 
@@ -126,11 +167,28 @@ button {
   display: inline-block;
 }
 
+/* 
+  About Section
+  ----------------------- */
+.section-about {
+  max-width: 70%;
+  min-width: 375px;
+}
+
 .ngo {
   padding: 1rem;
   border-radius: 4px;
   background-color: var(--color-main-mid);
 }
+
+/* 
+  Rates Section
+  ----------------------- */
+.section-rates {
+  max-width: 50%;
+  min-width: 375px;
+}
+
 /* 
   Testimonial
   ----------------------- */
@@ -154,13 +212,20 @@ button {
   CTA
   ----------------------- */
 .section-contact {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
   background-color: var(--color-sec);
-  text-align: center;
   padding: 1.5rem 0 1.5rem 0;
+}
+
+.section-contact h2 {
+  text-align: center;
 }
 
 .section-contact p {
   color: var(--color-main-dark);
+  text-align: center;
 }
 .section-contact form {
   display: grid;
@@ -169,12 +234,13 @@ button {
   grid-template-rows: 3rem 3rem 7rem 3rem;
   color: var(--color-main-light);
   padding: 0 1.5rem 0 1.5rem;
+  max-width: 600px;
 }
 
 .section-contact form label {
   grid-column: 1 / 2;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
