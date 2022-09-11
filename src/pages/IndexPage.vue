@@ -1,6 +1,12 @@
 <template>
-  <q-page class="flex flex-center bg-primary">
-    <q-card class="bg-transparent">
+  <q-page
+    padding
+    class="bg-primary"
+  >
+    <q-card
+      class="bg-transparent"
+      style="display: flex; justify-content: center"
+    >
       <q-card-section>
         <q-item>
           <q-item-section avatar>
@@ -26,9 +32,9 @@
           href="https://en.wikipedia.org/wiki/Lifelong_learning"
           target="_blank"
           >lifelong learning</a
-        >, I've been 'playing' with computers for more than 25 years 24/7,
-        touching basically every category except AI (no much neurons left for
-        that...).
+        >, I've been 'playing' with computers for more than
+        {{ yearsPlaying }} years 24/7, touching basically every category except
+        AI (no much neurons left for that...).
       </q-card-section>
       <q-card-section tag="p">
         I am having lot of fun creating professional custom apps using
@@ -65,6 +71,7 @@
     </q-card>
 
     <!-- The Contact Form -->
+
     <TheContactForm />
 
     <!-- The Tech Stack -->
@@ -87,16 +94,7 @@
 import TheContactForm from 'src/components/TheContactForm.vue'
 import TheTechStack from 'src/components/TheTechStack.vue'
 import TheFooter from 'src/components/TheFooter.vue'
+
+const actualDate = new Date()
+const yearsPlaying = actualDate.getFullYear() - 1995
 </script>
-
-<style lang="scss" scoped>
-// :deep(.q-card) {
-//   margin: 1rem;
-//   background-color: transparent;
-// }
-
-// .q-card {
-//   margin: 1rem;
-//   background-color: transparent;
-// }
-</style>

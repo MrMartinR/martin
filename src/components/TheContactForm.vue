@@ -1,5 +1,8 @@
 <template>
-  <q-card class="bg-secondary">
+  <q-card
+    class="bg-secondary"
+    style="max-width: 50rem; margin: auto"
+  >
     <q-card-section tag="h1">
       Contact me
       <q-tooltip tag="caption"> don't be shy! </q-tooltip>

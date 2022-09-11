@@ -1,17 +1,15 @@
 <template>
   <q-card class="bg-transparent">
-    <q-card-section tag="h1"> My Tech Stack </q-card-section>
+    <q-card-section tag="h2"> My Tech Stack </q-card-section>
 
+    <!-- <q-card-section class="flex"> -->
     <!-- Frontend -->
-    <q-item tag="h2"> Frontend </q-item>
     <q-card-section class="flex q-pa-none">
+      <!-- <q-item tag="h2"> Frontend </q-item> -->
       <q-item
         v-for="(logo, index) in frontend"
         :key="index"
       >
-        <!-- width="4rem"
-            height="auto"
-             position="absolute" -->
         <q-avatar square>
           <q-img
             :src="logo.src"
@@ -31,11 +29,11 @@
           </q-card>
         </q-tooltip>
       </q-item>
-    </q-card-section>
+      <!-- </q-card-section> -->
 
-    <!-- Backend -->
-    <q-item tag="h2"> Backend </q-item>
-    <q-card-section class="flex q-pa-none">
+      <!-- Backend -->
+      <!-- <q-card-section class="flex q-pa-none"> -->
+      <!-- <q-item tag="h2"> Backend </q-item> -->
       <q-item
         v-for="(logo, index) in backend"
         :key="index"
@@ -59,11 +57,11 @@
           </q-card>
         </q-tooltip>
       </q-item>
-    </q-card-section>
+      <!-- </q-card-section> -->
 
-    <!-- Other -->
-    <q-item tag="h2"> Other stuff </q-item>
-    <q-card-section class="flex q-pa-none">
+      <!-- Other -->
+      <!-- <q-card-section class="flex q-pa-none"> -->
+      <!-- <q-item tag="h2"> Other stuff </q-item> -->
       <q-item
         v-for="(logo, index) in other"
         :key="index"
@@ -88,6 +86,7 @@
         </q-tooltip>
       </q-item>
     </q-card-section>
+    <!-- </q-card-section> -->
   </q-card>
 </template>
 

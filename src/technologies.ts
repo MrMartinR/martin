@@ -10,6 +10,12 @@ export interface ILogos {
 
 export const frontend: ILogos[] = [
   {
+    name: 'Claris FileMaker',
+    description:
+      'An application development platform to build apps like a boss',
+    src: 'src/assets/claris.svg',
+  },
+  {
     name: 'Quasar',
     description: 'Amazing layer on top of Vue',
     src: 'src/assets/quasar.svg',
@@ -19,16 +25,16 @@ export const frontend: ILogos[] = [
     description: 'Vue 3 JS Framework',
     src: 'src/assets/vue.svg',
   },
-  {
-    name: 'Vite',
-    description: 'Vite is a no bundler DEV environment for Vue.js',
-    src: 'src/assets/vite.svg',
-  },
-  {
-    name: 'Pinia',
-    description: 'Vue 3 Store',
-    src: 'src/assets/pinia.svg',
-  },
+  // {
+  //   name: 'Vite',
+  //   description: 'Vite is a no bundler DEV environment for Vue.js',
+  //   src: 'src/assets/vite.svg',
+  // },
+  // {
+  //   name: 'Pinia',
+  //   description: 'Vue 3 Store',
+  //   src: 'src/assets/pinia.svg',
+  // },
 ]
 
 export const backend: ILogos[] = [
@@ -70,12 +76,12 @@ export const other: ILogos[] = [
     description: "JavaScript is the world's most popular programming language",
     src: 'src/assets/javascript.svg',
   },
-  {
-    name: 'ESLint',
-    description:
-      'ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code',
-    src: 'src/assets/eslint.svg',
-  },
+  // {
+  //   name: 'ESLint',
+  //   description:
+  //     'ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code',
+  //   src: 'src/assets/eslint.svg',
+  // },
   {
     name: 'git',
     description:
