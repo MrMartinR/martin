@@ -13,17 +13,17 @@ export const frontend: ILogos[] = [
     name: 'Claris FileMaker',
     description:
       'An application development platform to build apps like a boss',
-    src: '/assets/claris.svg',
+    src: '../assets/claris.svg',
   },
   {
     name: 'Quasar',
     description: 'Amazing layer on top of Vue',
-    src: '/assets/quasar.svg',
+    src: 'src/assets/quasar.svg',
   },
   {
     name: 'Vue',
     description: 'Vue 3 JS Framework',
-    src: '/assets/vue.svg',
+    src: 'src/assets/vue.svg',
   },
   // {
   //   name: 'Vite',
@@ -41,27 +41,27 @@ export const backend: ILogos[] = [
   {
     name: 'Parse',
     description: 'Backend',
-    src: '/assets/parse.svg',
+    src: 'src/assets/parse.svg',
   },
   {
     name: 'PostgreSQL',
     description: 'Open source SQL database',
-    src: '/assets/postgres.svg',
+    src: 'src/assets/postgres.svg',
   },
   {
     name: 'AWS',
     description: 'Amazon Web Services',
-    src: '/assets/aws.svg',
+    src: 'src/assets/aws.svg',
   },
   {
     name: 'Ubuntu',
     description: 'OS Linux distro',
-    src: '/assets/ubuntu.svg',
+    src: 'src/assets/ubuntu.svg',
   },
   {
     name: 'Node',
     description: 'Node JS',
-    src: '/assets/node.svg',
+    src: 'src/assets/node.svg',
   },
 ]
 
@@ -69,12 +69,12 @@ export const other: ILogos[] = [
   {
     name: 'TypeScript',
     description: 'JavaScript superset',
-    src: '/assets/typescript.svg',
+    src: 'src/assets/typescript.svg',
   },
   {
     name: 'JavaScript',
     description: "JavaScript is the world's most popular programming language",
-    src: '/assets/javascript.svg',
+    src: 'src/assets/javascript.svg',
   },
   // {
   //   name: 'ESLint',
@@ -86,12 +86,12 @@ export const other: ILogos[] = [
     name: 'git',
     description:
       'Git is a free and open source distributed version control system',
-    src: '/assets/git.svg',
+    src: 'src/assets/git.svg',
   },
   {
     name: 'VSCode',
     description:
       'Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.',
-    src: '/assets/vscode.svg',
+    src: 'src/assets/vscode.svg',
   },
 ]
