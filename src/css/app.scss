@@ -1,1 +1,79 @@
-// app global css in SCSS form
+/// app global css in SCSS form
+/// @see @link https://quasar.dev/style/sass-scss-variables
+///
+
+//
+// G L O B A L
+//
+/* Font */
+@font-face {
+  font-family: 'urbanist';
+  src: url('src/css/fonts/Urbanist-VariableFont_wght.woff');
+}
+
+/* Removes text tranformation */
+* {
+  color: $primary-light;
+  text-transform: none;
+}
+
+/* Formats the Links */
+a:any-link {
+  color: $secondary;
+  text-transform: none;
+  text-decoration: none;
+}
+
+// html {
+//   font-family: Urbanist;
+//   font-size: 16px;
+//   background-color: $primary;
+//   color: $primary-light;
+//   /* Include padding and border in the element's total width and height */
+//   // box-sizing: border-box;
+//   // max-width: 1200px;
+//   // margin: auto;
+// }
+
+h1 {
+  font-size: clamp(1.8rem, 1rem + 2vw, 2.8rem);
+}
+
+h2 {
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.6rem);
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.8rem 1rem;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.2rem);
+}
+
+.q-btn {
+  background-color: $primary;
+  font-size: 1.2rem;
+}
+
+.q-toolbar__title {
+  font-size: clamp(1.8rem, 1rem + 2vw, 2.8rem);
+  color: $secondary;
+}
+
+.q-bar {
+  background-color: transparent;
+}
+.q-item__label {
+  font-size: 1.125rem;
+}
+.q-field__label {
+  font-size: 1.125rem;
+}
+.q-field__native {
+  font-size: 1.125rem;
+}
+
+/* Hides the hoover effect on buttons */
+.q-focus-helper {
+  display: none;
+}

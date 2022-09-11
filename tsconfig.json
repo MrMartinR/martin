@@ -1,6 +1,19 @@
 {
   "extends": "@quasar/app-vite/tsconfig-preset",
   "compilerOptions": {
-    "baseUrl": "."
-  }
+    // "skipLibCheck": true, // @see  {@link https://github.com/microsoft/TypeScript/issues/49109}
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "app/*": ["*"],
+      "components/*": ["src/components/*"],
+      "layouts/*": ["src/layouts/*"],
+      "pages/*": ["src/pages/*"],
+      "assets/*": ["src/assets/*"],
+      "boot/*": ["src/boot/*"],
+      "stores/*": ["src/stores/*"], // FIXME: check if after moving the stores I need to change something here
+      "parse/dist/parse.min": ["node_modules/@types/parse/index.d.ts"] // @see  {@link https://github.com/parse-community/Parse-SDK-JS/issues/1362}
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

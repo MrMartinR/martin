@@ -3,14 +3,18 @@
   "editor.guides.bracketPairs": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": [
-    "source.fixAll.eslint"
-  ],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "vue"
-  ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "explorer.compactFolders": false,
+  "editor.wordWrap": "on",
+  /* Autocompletion scss quasar | https://www.youtube.com/watch?v=sKrp2d1HUAM */
+  "html-css-class-completion.searchRemoteGlobPattern": "**/*.{svelte,tpl,eex,latte,php,html,twig}",
+  "html-css-class-completion.enableScssFindUsage": true,
+  "html-css-class-completion.remoteStyleSheets": [
+    "node_modules/quasar/dist/quasar.css"
+  ]
+  // "html-css-class-completion.remoteStyleSheets": [
+  //   "https://cdn.jsdelivr.net/npm/quasar@2.7.7/dist/quasar.prod.css"
+  // ]
 }

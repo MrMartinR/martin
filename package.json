@@ -3,8 +3,16 @@
   "version": "0.0.1",
   "description": "Martin Romero site",
   "productName": "Martin",
-  "author": "chichospit@me.com",
+  "author": "Martin R.",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrMartinR/martin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrMartinR/martin/issues"
+  },
+  "homepage": "https://github.com/MrMartinR/martin#readme",
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",

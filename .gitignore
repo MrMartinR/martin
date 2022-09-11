@@ -1,6 +1,7 @@
 .DS_Store
 .thumbs.db
 node_modules
+*.env
 
 # Quasar core related directories
 .quasar
@@ -24,6 +25,7 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+nohup.out
 
 # Editor directories and files
 .idea
