@@ -5,7 +5,7 @@
       size="64px"
     >
       <q-img
-        src="src/assets/martin-icon.svg"
+        src="../assets/martin-icon.svg"
         alt="Martin Icon"
         :no-native-menu="true"
       />
@@ -25,7 +25,7 @@
           square
           size="32px"
         >
-          <q-img src="src/assets/linkedin-icon.svg" />
+          <q-img src="../assets/linkedin-icon.svg" />
         </q-avatar>
       </q-btn>
 
@@ -41,7 +41,7 @@
           square
           size="32px"
         >
-          <q-img src="src/assets/email-icon.svg" />
+          <q-img src="../assets/email-icon.svg" />
         </q-avatar>
       </q-btn>
 
@@ -56,7 +56,7 @@
           square
           size="32px"
         >
-          <q-img src="src/assets/github-icon.svg" />
+          <q-img src="../assets/github-icon.svg" />
         </q-avatar>
       </q-btn>
     </q-btn-group>
