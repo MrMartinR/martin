@@ -12,7 +12,7 @@
       >
         <q-avatar square>
           <q-img
-            :src="logo.src"
+            :src="`../logos/${logo.src}`"
             no-native-menu
             :ratio="1"
             img-class="filter"
@@ -40,7 +40,7 @@
       >
         <q-avatar square>
           <q-img
-            :src="logo.src"
+            :src="`../logos/${logo.src}`"
             no-native-menu
             :ratio="1"
             img-class="filter"
@@ -67,8 +67,15 @@
         :key="index"
       >
         <q-avatar square>
+          <!-- :src="logo.src" -->
+          <!-- <q-img
+            :src="`../assets/${logo.name}.svg`"
+            no-native-menu
+            :ratio="1"
+            img-class="filter"
+          /> -->
           <q-img
-            :src="logo.src"
+            :src="`../logos/${logo.src}`"
             no-native-menu
             :ratio="1"
             img-class="filter"

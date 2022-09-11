@@ -11,7 +11,7 @@
         <q-item>
           <q-item-section avatar>
             <q-avatar size="10rem">
-              <q-img src="src/assets/martin-romero.jpeg" />
+              <q-img src="../assets/martin-romero.jpeg" />
             </q-avatar>
           </q-item-section>
           <q-item-section>

@@ -13,17 +13,17 @@ export const frontend: ILogos[] = [
     name: 'Claris FileMaker',
     description:
       'An application development platform to build apps like a boss',
-    src: '../assets/claris.svg',
+    src: 'claris.svg',
   },
   {
     name: 'Quasar',
     description: 'Amazing layer on top of Vue',
-    src: 'src/assets/quasar.svg',
+    src: 'quasar.svg',
   },
   {
     name: 'Vue',
     description: 'Vue 3 JS Framework',
-    src: 'src/assets/vue.svg',
+    src: 'vue.svg',
   },
   // {
   //   name: 'Vite',
@@ -41,27 +41,27 @@ export const backend: ILogos[] = [
   {
     name: 'Parse',
     description: 'Backend',
-    src: 'src/assets/parse.svg',
+    src: 'parse.svg',
   },
   {
     name: 'PostgreSQL',
     description: 'Open source SQL database',
-    src: 'src/assets/postgres.svg',
+    src: 'postgres.svg',
   },
   {
     name: 'AWS',
     description: 'Amazon Web Services',
-    src: 'src/assets/aws.svg',
+    src: 'aws.svg',
   },
   {
     name: 'Ubuntu',
     description: 'OS Linux distro',
-    src: 'src/assets/ubuntu.svg',
+    src: 'ubuntu.svg',
   },
   {
     name: 'Node',
     description: 'Node JS',
-    src: 'src/assets/node.svg',
+    src: 'node.svg',
   },
 ]
 
@@ -69,12 +69,12 @@ export const other: ILogos[] = [
   {
     name: 'TypeScript',
     description: 'JavaScript superset',
-    src: 'src/assets/typescript.svg',
+    src: 'typescript.svg',
   },
   {
     name: 'JavaScript',
     description: "JavaScript is the world's most popular programming language",
-    src: 'src/assets/javascript.svg',
+    src: 'javascript.svg',
   },
   // {
   //   name: 'ESLint',
@@ -86,12 +86,12 @@ export const other: ILogos[] = [
     name: 'git',
     description:
       'Git is a free and open source distributed version control system',
-    src: 'src/assets/git.svg',
+    src: 'git.svg',
   },
   {
     name: 'VSCode',
     description:
       'Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.',
-    src: 'src/assets/vscode.svg',
+    src: 'vscode.svg',
   },
 ]
