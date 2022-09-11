@@ -50,12 +50,12 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16',
       },
 
-      vueRouterMode: 'history', // available values: 'hash', 'history'
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
 
-      // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
+      rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
       // publicPath: '/',
       // analyze: true,
@@ -77,17 +77,17 @@ module.exports = configure(function (/* ctx */) {
        * Added for work with AWS Amplify
        * @see {@link https://ui.docs.amplify.aws/vue/getting-started/troubleshooting}
        */
-      // alias: {
-      //   './runtimeConfig': './runtimeConfig.browser',
-      // },
-      resolve: {
-        alias: [
-          {
-            find: './runtimeConfig',
-            replacement: './runtimeConfig.browser',
-          },
-        ],
+      alias: {
+        './runtimeConfig': './runtimeConfig.browser',
       },
+      // resolve: {
+      //   alias: [
+      //     {
+      //       find: './runtimeConfig',
+      //       replacement: './runtimeConfig.browser',
+      //     },
+      //   ],
+      // },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
