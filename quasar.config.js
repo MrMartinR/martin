@@ -72,6 +72,14 @@ module.exports = configure(function (/* ctx */) {
       // vitePlugins: [
       //   [ 'package-name', { ..options.. } ]
       // ]
+
+      /**
+       * Added for work with AWS Amplify
+       * @see {@link https://ui.docs.amplify.aws/vue/getting-started/troubleshooting}
+       */
+      alias: {
+        './runtimeConfig': './runtimeConfig.browser',
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer

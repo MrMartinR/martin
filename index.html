@@ -91,5 +91,13 @@
   </head>
   <body>
     <!-- quasar:entry-point -->
+    <!--
+      Added for work with AWS Amplify
+      @see {@link https://ui.docs.amplify.aws/vue/getting-started/troubleshooting}
+     -->
+    <script>
+      window.global = window
+      var exports = {}
+    </script>
   </body>
 </html>

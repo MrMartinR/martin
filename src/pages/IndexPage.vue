@@ -97,4 +97,20 @@ import TheFooter from 'src/components/TheFooter.vue'
 
 const actualDate = new Date()
 const yearsPlaying = actualDate.getFullYear() - 1995
+
+const position = [
+  'Work-Alcoholic',
+  'Data Magician',
+  'Info-Junkie',
+  'Curiosity-Addict',
+  'Impostor Syndrome',
+]
+
+const tagLine = [
+  'Just another random internet guy',
+  'Jack of all trades, master of none',
+  'The guy who fix printers',
+  'Your IT guy!',
+  'A computer guy',
+]
 </script>
