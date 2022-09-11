@@ -77,9 +77,9 @@ module.exports = configure(function (/* ctx */) {
        * Added for work with AWS Amplify
        * @see {@link https://ui.docs.amplify.aws/vue/getting-started/troubleshooting}
        */
-      alias: {
-        './runtimeConfig': './runtimeConfig.browser',
-      },
+      // alias: {
+      //   './runtimeConfig': './runtimeConfig.browser',
+      // },
       // resolve: {
       //   alias: [
       //     {

@@ -6,7 +6,7 @@
      * Added for work with AWS Amplify
      * @see {@link https://ui.docs.amplify.aws/vue/getting-started/troubleshooting}
      */
-    "skipLibCheck": true,
+    // "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"],
